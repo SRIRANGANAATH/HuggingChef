@@ -13,6 +13,7 @@ export async function getRecipeFromMistral(ingredientsArr) {
   const ingredientsString = ingredientsArr.join(", ");
   try {
     const response = await hf.chatCompletion({
+      provider: "hf-inference",
       model: "Qwen/Qwen2.5-7B-Instruct",
       messages: [
         { role: "system", content: SYSTEM_PROMPT },
