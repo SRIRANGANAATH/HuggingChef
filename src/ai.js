@@ -14,7 +14,7 @@ export async function getRecipeFromMistral(ingredientsArr) {
   try {
     const response = await hf.chatCompletion({
       provider: "hf-inference",
-      model: "Qwen/Qwen2.5-7B-Instruct",
+      model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
       messages: [
         { role: "system", content: SYSTEM_PROMPT },
         {
