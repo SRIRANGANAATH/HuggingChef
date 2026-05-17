@@ -1,12 +1,19 @@
 {
   "compilerOptions": {
+    "types": ["node"],
     "composite": true,
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "isolatedModules": true,
+    "noEmit": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true
   },
-  "include": ["vite.config.js", "eslint.config.js"]
+  "include": [
+    "vite.config.js",
+    "eslint.config.js"
+  ]
 }
